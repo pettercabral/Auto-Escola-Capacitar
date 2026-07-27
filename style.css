@@ -148,9 +148,10 @@ p  { font-size: 1rem; color: var(--cinza-texto); }
 }
 .nav-logo img {
   display: block;
-  height: auto;
-  width: clamp(120px, 24vw, 180px);
+  width: min(180px, 100%);
   max-width: 180px;
+  height: auto;
+  object-fit: contain;
 }
 .nav-links {
   display: flex;
