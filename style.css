@@ -236,7 +236,8 @@ p  { font-size: 1rem; color: var(--cinza-texto); }
 .hero-stat strong { display: block; font-family: 'Outfit', sans-serif; font-size: 2rem; font-weight: 800; color: var(--laranja); }
 .hero-stat span { font-size: 0.85rem; color: rgba(255,255,255,0.65); }
 .hero-image { position: relative; }
-.hero-image img { border-radius: var(--radius-lg); box-shadow: var(--sombra-lg); width: 100%; }
+.hero-image img { border-radius: var(--radius-lg); box-shadow: var(--sombra-lg); width: 100%; height: 100%;
+    object-fit: cover;}
 .hero-image-badge {
   position: absolute; bottom: -20px; left: -20px;
   background: var(--laranja);
