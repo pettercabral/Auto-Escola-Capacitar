@@ -141,7 +141,19 @@ p  { font-size: 1rem; color: var(--cinza-texto); }
   height: 72px;
   gap: 24px;
 }
-.nav-logo img { height: 44px; width: auto; height: 160px; }
+.nav-logo {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.nav-logo img {
+  display: block;
+  height: auto;
+  width: clamp(120px, 24vw, 180px);
+  max-width: 180px;
+  max-height: 54px;
+  object-fit: contain;
+}
 .nav-links {
   display: flex;
   align-items: center;
